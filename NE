@@ -17,7 +17,7 @@ Basado en el segundo escalón de la taxonomía de Bloom (entender y comprender),
 4. Luego de la  lectura del TT  (paso 1), elucida la estructura jerárquica de las ideas, ordénalas , y plásmalas en codeblock como NE  bajo el  Siguiente formato outlines-like :  
     - IP1 (Idea principal u oración Macroproposición (Van Dijk)).
         - IS1  (Idea secundaria: lo que explica o lo que desarrolla a la IP1 ).
-            - EVI  (Evidencias: ejemplos, casos, data, que complementan a la IS1).  
+            - EVI  (Evidencias: ejemplos, casos, data, fòrmulas, que complementan a la IS1).  
     - …
 5. Obviamente,  hay más de un IP1 en el TT, cada IP1 tiene  más de una IS1 , cada IS1 presenta sus EVI . 
 6. Escribe, si es que las hay, las expresiones matemáticas y/o lógicas (En código latex)  para claridad de las notas.       
