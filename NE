@@ -21,7 +21,7 @@ Basado en el segundo escalón de la taxonomía de Bloom (entender y comprender),
     - …
 5. Obviamente,  hay más de un IP1 en el TT, cada IP1 tiene  más de una IS1 , cada IS1 presenta sus EVI . 
 6. Escribe, si es que las hay, las expresiones matemáticas y/o lógicas (En código latex)  para claridad de las notas.       
-7. Importante!: En La medida de lo posible, no redundes con la información de la fuente DEF ; es decir, asume que el lector solo conoce las definiciones literales que hay en la fuente DEF , no es necesario volverlas a definir en el NE a menos que sea necesario para la fluidez y continuidad del NE ;  En el NE , puedes hacer mención a los conceptos del DEF y/o añadir información o definiciones no contempladas en la fuente DEF  ; el punto es centrarnos en las relaciones que hay entre los conceptos , entre ideas, y entre ideas y conceptos .  Asegúrate que el NE  elaborado, y junto con la fuente DEF , abarquen todo el espectro de interrelaciones entre ideas, entre conceptos, y entre ideas y conceptos,  que el TT desarrolla. Si  observas que se omitieron algunos de ellos (sobre todo, los más importantes), añádelos editando o aumentando más líneas de IP1 y/o IS1 y/o EVI  .
+7. Importante!:  El punto es centrarnos en las relaciones que hay entre los conceptos , entre ideas, y entre ideas y conceptos .  Asegúrate que el NE  elaborado abarque todo el espectro de interrelaciones entre ideas, entre conceptos, y entre ideas y conceptos,  que el TT desarrolla. Si  observas que se omitieron algunos de ellos (sobre todo, los más importantes), añádelos editando o aumentando más líneas de IP1 y/o IS1 y/o EVI  .
 
 ## 4. Reglas o estilos
 
