@@ -1,0 +1,123 @@
+%%{init: {'themeVariables': { 'lineColor': '#87ceeb' }}}%%
+graph TD
+    %% Estilos de nodos
+    classDef primitivo fill:#f5f5f5,stroke:#333,stroke-width:1px,color:#111;
+    classDef axioma fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#0d47a1;
+    classDef definicion fill:#e8f5e9,stroke:#43a047,stroke-width:2px,color:#1b5e20;
+    classDef teorema fill:#fff8e1,stroke:#ffb300,stroke-width:2px,color:#7f0000;
+
+    %% ==========================================
+    %% DEFINICIÓN DE NODOS
+    %% ==========================================
+    CP_pert(["Concepto Primitivo:<br/>Pertenencia (∈)"]):::primitivo
+    Ax_exist("Axioma 2.1: Existencia<br/>(Existe al menos un conjunto)"):::axioma
+    Ax_igual("Axioma 2.2: De Igualdad<br/>(A = B ↔ ∀x(x ∈ A ↔ x ∈ B))"):::axioma
+    Def_sub["Definición 2.4: Inclusión / Subconjunto<br/>(B ⊂ A ↔ ∀x(x ∈ B → x ∈ A))"]:::definicion
+    Teo_dobleinc["Teorema 2.5: Igualdad es Doble Inclusión<br/>(A = B ↔ A ⊂ B ∧ B ⊂ A)"]:::teorema
+    Ax_espec("Axioma 2.6: De Especificación<br/>(B = {x ∈ A | p(x)})"):::axioma
+    Para_russ(["Paradoja de Russell<br/>(Evitada al exigir conjunto referencial A)"]):::primitivo
+    Def_vacio["Definición 2.7: Conjunto Vacío<br/>(Ø = {x ∈ A | x ≠ x})"]:::definicion
+    Teo_vaciosub["Teorema 2.8: El Vacío es Subconjunto<br/>(Ø ⊂ B)"]:::teorema
+    Ax_union("Axioma 2.9: De la Unión<br/>(∃ E con elem. de elem. de F)"):::axioma
+    Def_unifam["Definición 2.10: Unión de una Familia F<br/>(⋃ F = {x ∈ E | ∃A ∈ F, x ∈ A})"]:::definicion
+    Const_E["Conjunto Universal de Referencia E<br/>(Base para Operaciones Binarias)"]:::primitivo
+
+    Def_union["Definición 2.17: Unión Binaria<br/>(A ∪ B = {x ∈ E | x ∈ A ∨ x ∈ B})"]:::definicion
+    Def_inter["Definición 2.18: Intersección<br/>(A ∩ B = {x ∈ E | x ∈ A ∧ x ∈ B})"]:::definicion
+    Def_compl["Definición 2.15: Complemento<br/>(Aᶜ = {x ∈ E | x ∉ A})"]:::definicion
+    Def_difer["Definición 2.20: Diferencia de Conjuntos<br/>(A \\ B = {x ∈ E | x ∈ A ∧ x ∉ B})"]:::definicion
+    Def_difsim["Definición 2.22: Diferencia Simétrica<br/>(A Δ B = (A \\ B) ∪ (B \\ A))"]:::definicion
+    Teo_reldif["Teorema 2.24: Expresión de Diferencias<br/>(A \\ B = A ∩ Bᶜ, A Δ B = (A ∩ Bᶜ) ∪ (B ∩ Aᶜ))"]:::teorema
+    Teo_leyesalg["Teorema 2.25: Leyes del Álgebra de Conjuntos<br/>(Asociatividad, De Morgan, Distributividad)"]:::teorema
+
+    Ax_poten("Axioma 2.12: Del Conjunto Potencia<br/>(∃ P(A) cuyos elem. son subconjuntos de A)"):::axioma
+    Def_pareja["Definición 2.28: Pareja Ordenada<br/>((a, b) = {{a}, {a, b}})"]:::definicion
+    Teo_igualpar["Teorema 2.14: Caracterización de Pareja<br/>((a, b) = (c, d) ↔ a = c ∧ b = d)"]:::teorema
+    Def_prodcart["Definición 2.29: Producto Cartesiano<br/>(A × B = {(a,b) | a ∈ A ∧ b ∈ B})"]:::definicion
+    Teo_distprod["Ejercicio 2.15: Distributividad de x sobre ∪<br/>(A × (B ∪ C) = (A × B) ∪ (A × C))"]:::teorema
+
+    %% ==========================================
+    %% ALINEACIÓN VERTICAL FORZADA (Spine Invisible)
+    %% ==========================================
+    %% Esto obliga a Mermaid a apilar los nodos verticalmente en una sola columna principal,
+    %% evitando que se abran horizontalmente, sin importar las conexiones secundarias.
+    CP_pert ~~~ Ax_exist
+    Ax_exist ~~~ Ax_igual
+    Ax_igual ~~~ Def_sub
+    Def_sub ~~~ Teo_dobleinc
+    Teo_dobleinc ~~~ Ax_espec
+    Ax_espec ~~~ Def_vacio
+    Def_vacio ~~~ Teo_vaciosub
+    Teo_vaciosub ~~~ Ax_union
+    Ax_union ~~~ Def_unifam
+    Def_unifam ~~~ Const_E
+    Const_E ~~~ Def_union
+    Def_union ~~~ Def_inter
+    Def_inter ~~~ Def_compl
+    Def_compl ~~~ Def_difer
+    Def_difer ~~~ Def_difsim
+    Def_difsim ~~~ Teo_reldif
+    Teo_reldif ~~~ Teo_leyesalg
+    Teo_leyesalg ~~~ Ax_poten
+    Ax_poten ~~~ Def_pareja
+    Def_pareja ~~~ Teo_igualpar
+    Teo_igualpar ~~~ Def_prodcart
+    Def_prodcart ~~~ Teo_distprod
+
+    %% ==========================================
+    %% CONEXIONES Y DEPENDENCIAS REALES DE LA TEORÍA
+    %% ==========================================
+    
+    %% --- Sección 2.1 ---
+    CP_pert --> Ax_igual
+    CP_pert --> Def_sub
+    CP_pert --> Ax_espec
+
+    Ax_igual --> Teo_dobleinc
+    Def_sub --> Teo_dobleinc
+
+    Ax_exist --> Def_vacio
+    Ax_espec --> Def_vacio
+
+    Def_sub --> Teo_vaciosub
+    Def_vacio --> Teo_vaciosub
+
+    Ax_espec -.-> Para_russ
+
+    Ax_union --> Def_unifam
+    Ax_espec --> Def_unifam
+
+    %% --- Sección 2.2 ---
+    Ax_union --> Const_E
+    Ax_espec --> Const_E
+
+    Const_E --> Def_union
+    Const_E --> Def_inter
+    Const_E --> Def_compl
+    Const_E --> Def_difer
+
+    Def_union --> Def_difsim
+    Def_difer --> Def_difsim
+
+    Def_compl --> Teo_reldif
+    Def_inter --> Teo_reldif
+    Def_difer --> Teo_reldif
+    Def_difsim --> Teo_reldif
+
+    Def_compl --> Teo_leyesalg
+    Def_union --> Teo_leyesalg
+    Def_inter --> Teo_leyesalg
+
+    %% --- Sección 2.3 ---
+    Ax_poten --> Def_pareja
+    Ax_espec --> Def_pareja
+    Def_sub --> Def_pareja
+
+    Def_pareja --> Def_prodcart
+    Ax_poten --> Def_prodcart
+
+    Def_pareja --> Teo_igualpar
+    Ax_igual --> Teo_igualpar
+
+    Def_prodcart --> Teo_distprod
+    Def_union --> Teo_distprod
