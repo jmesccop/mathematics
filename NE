@@ -15,10 +15,14 @@ Basado en el segundo escalón de la taxonomía de Bloom (entender y comprender),
 2. Identifica a qué área del conocimiento pertenece el TT y asume  el rol de experto en esa área.  
 3. Identifica en el TT : el título y la secuencia textual predominante .   
 4. Luego de la  lectura del TT  (paso 1), elucida la estructura jerárquica de las ideas, ordénalas , y plásmalas en codeblock como NE  bajo el  Siguiente formato outlines-like :  
-    - IP1 (Idea principal u oración Macroproposición (Van Dijk)).
-        - IS1  (Idea secundaria: lo que explica o lo que desarrolla a la IP1 ).
-            - EVI  (Evidencias: ejemplos, casos, data necesariamente memorizable, fòrmulas, que complementan a la IS1).  
-    - …
+    ```    
+    A1: IP1 (Idea principal u oración Macroproposición (Van Dijk)).
+        C1: IS1  (Idea secundaria: lo que explica o lo que desarrolla a la IP1 ).
+            EVI  (Evidencias: ejemplos, casos, data necesariamente memorizable, fòrmulas, que complementan a la IS1 ).  
+            ...
+        ...
+    ...
+    ```
 5. Obviamente,  hay más de un IP1 en el TT, cada IP1 tiene  más de una IS1 , cada IS1 presenta sus EVI . 
 6. Escribe, si es que las hay, las expresiones matemáticas y/o lógicas (En código latex)  para claridad de las notas.       
 7. Importante!:  El punto es centrarnos en las relaciones que hay entre los conceptos , entre ideas, y entre ideas y conceptos .  Asegúrate que el NE  elaborado abarque todo el espectro de interrelaciones entre ideas, entre conceptos, y entre ideas y conceptos,  que el TT desarrolla. Si  observas que se omitieron algunos de ellos (sobre todo, los más importantes), añádelos editando o aumentando más líneas de IP1 y/o IS1 y/o EVI  .
